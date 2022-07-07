@@ -21,5 +21,17 @@ I don't know why 35 api cannot get response or error. I did tried with my own ap
 
 ## Reproduce this issue
 
-- Open UnrealFetchDevApp by Unreal Editor
+- Step 1: Open UnrealFetchDevApp by Unreal Editor
   ![](./Images/reproduce-step-1.png)
+
+- Step 2: Open level /Content/Developers/tiendattran/DatTestUI
+  ![](./Images/reproduce-step-2.png)
+
+- Step 3: Click on button "Start Timer 0.2 seconds" - It's mean it'll call api every 0.2 seconds.
+  ![](./Images/reproduce-step-3.png)
+
+- Step 4: Read the log from Output Log tab. Please click on button "Stop Timer" to see different index between process and on binding event.
+  You could see that it' already called 3881 api times. But we just received 3877 responses.
+  ![](./Images/reproduce-step-4.png)
+
+Question: Why those api cannot get responses? How solve this problem!
